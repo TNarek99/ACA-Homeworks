@@ -1,0 +1,51 @@
+td{
+    padding: 30px;
+    font-size: 20px;
+}
+
+th{
+    font-size: 20px;
+}
+
+h1{
+    margin-left: 180px;
+    margin-bottom: 30px;
+}
+
+li {
+    font-size: 30px;
+}
+
+.pagination{
+    margin-left: 120px;
+}
+
+.form-control{
+    width: 100% !important;
+    display: inline-block;
+    margin: 20px;
+}
+
+.btn-info{
+    width: 100%;
+    margin: 20px;
+    border-radius: 0% !important;
+}
+
+.btn-primary{
+    width: 100%;
+    margin: 20px;
+    border-radius: 0% !important;
+}
+
+.text-warning{
+    font-size: 20px;
+}
+
+.remove{
+    width: 200px !important;
+}
+
+.btn-warning{
+    width: 200px;
+}

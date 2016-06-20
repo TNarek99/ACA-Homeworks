@@ -1,0 +1,24 @@
+.formContainer{
+    height: 380px;
+    background-color: #006699;
+}
+
+.form-control{
+    height: 28px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+label{
+    font-size: 17px;
+    color: white;
+}
+
+.heading{
+    font-size: 30px;
+}
+
+.bd{
+    width: 80px;
+}
+

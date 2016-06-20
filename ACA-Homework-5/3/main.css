@@ -1,0 +1,12 @@
+/*.last{
+	color: blue;
+}
+
+.last:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}*/
+
+a:visited{
+	text-decoration: none;
+}

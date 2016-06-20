@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)file:///I:/Narek/ACA/DAY5/2/index.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap</title>
+
+    <!-- Bootstrap -->
+  <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+	<link href="./index_files/main.css" rel="stylesheet">
+	<link href="./index_files/main(1).css" rel="stylesheet">
+	<link href="./index_files/css" rel="stylesheet" type="text/css">
+	<link href = "main.css" rel = "stylesheet">
+  <style>
+  .item{
+    border: 1px solid #006699;
+    font-size: 30px;
+  }
+
+  .first{
+    border: 1px solid #006699;
+    font-size: 30px;
+    background-image: url('source/animal.png');
+    background-size: 72%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body onload="drawMatrix()">
+    <div id = "matrixContainer" class = "container">
+    </div>
+
+    <br><br>
+    <div class = "container">
+      <input type = "text" placeholder = "type in the moves" id = "movesText">
+      <button class = "btn btn-primary" onclick = "draw()">Draw</button>
+   </div>
+
+
+
+    <script>
+      var drawnMatrix = [
+        ['', '', '', '', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', '', '', '', '']
+      ];
+      var matrixHTML = '';
+      function drawMatrix() {
+        for (var i = 0; i < 10; i++){
+          matrixHTML += '<div class = "row">';
+          for (var j = 0; j < 10; j++){
+            if (i == 0 && j == 0){
+              matrixHTML += '<div style = "width: 50px; height: 50px; float: left;" class = "first">';
+              matrixHTML += '</div>';
+            }else{
+            matrixHTML += '<div style = "width: 50px; height: 50px; float: left;" class = "item">';
+            matrixHTML += '</div>';}
+            drawnMatrix[i][j] = '<div style = "width: 50px; height: 50px; float: left;" class = "item">';
+            drawnMatrix[i][j] += '</div>';
+          }
+          matrixHTML += '</div>';
+        }
+        document.getElementById('matrixContainer').innerHTML = matrixHTML;
+
+      }
+
+      function draw() {
+        var mHTML;
+        var moves = document.getElementById('movesText').value;
+        var length = moves.length;
+        var a = 0;
+        var b = 0;
+        drawnMatrix[0][0] = '<div style = "width: 50px; height: 50px; float: left;" class = "first">';
+        drawnMatrix[0][0] += '</div>';
+        for (var p = 0; p < length; p++){
+
+          switch (moves[p]){
+            case 'U':
+              a = a - 1;
+              break;
+
+            case 'D':
+              a = a + 1;
+              break;
+
+            case 'R':
+              b = b + 1;
+              break;
+
+            case 'L':
+              b = b - 1;
+              break;
+
+          }
+
+          if (p == length - 1){
+            drawnMatrix[a][b] = '<div style = "width: 50px; height: 50px; float: left;" class = "first">';
+            drawnMatrix[a][b] += '</div>'
+          }else{
+            drawnMatrix[a][b] = '<div style = "width: 50px; height: 50px; float: left; background-color: red;" class = "item">';
+            drawnMatrix[a][b] += '</div>'
+
+          }
+
+        }
+
+
+        for (var m = 0; m < 10; m++){
+          mHTML += '<div class = "row">';
+          for (var n = 0; n < 10; n++){
+            mHTML += drawnMatrix[m][n];
+
+          }
+          mHTML += '</div>';
+        }
+        document.getElementById('matrixContainer').innerHTML = mHTML;
+      }
+
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./index_files/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./index_files/bootstrap.min.js"></script>
+  </body>
+
+
+
+
+
+</html>

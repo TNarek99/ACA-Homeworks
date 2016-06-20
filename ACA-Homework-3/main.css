@@ -1,0 +1,287 @@
+.listItem{
+	display: inline-block;
+	margin-right: 20px;
+    color: #class = "sortItem";
+}
+
+.Item{
+	display: inline-block;
+	margin-right: 20px;
+	color: black;
+	
+}
+
+.Icons{
+    float: right;
+}
+
+.Icons ul{
+    list-style-type: none;
+    margin: 0;
+
+}
+
+.Icons ul li{
+	cursor: pointer;
+    font-size: 10px;
+    float: left;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	border-top: 1px solid lightgrey;
+
+}
+
+
+.Icons li:hover{
+    background-color: #39E7AC;
+    color: white;
+
+}
+
+.Icons ul li img{
+    height: 15px;
+    width: auto;
+    position: relative;
+    top: 5px;
+
+
+}
+
+.Icons ul a:last-child li{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid lightgrey;
+}
+
+
+.listItem:hover{
+	cursor: pointer;
+	color: white;
+	background-color: #39E7AC;
+}
+
+.sortItem{
+	display: inline-block;
+	margin-right: 20px;
+	color: #class = "sortItem";
+	width: 50px;
+	height: 80px;
+	text-align: center;
+	padding-right: 25px;
+}
+
+.sortItem:hover{
+	cursor: pointer;
+	background-color: #39E7AC;
+	color: white;
+}
+
+.buttonItem{
+	display: inline-block;
+	padding-right: 30px;
+    height: 30px;
+	
+}
+
+.buttonItem:hover{
+	background-color: #39E7AC;
+}
+
+div.buttonItem b:hover{
+	color: white;
+}
+
+.listDiv{
+	float:center;
+}
+
+.login{
+	font-family: Arial;
+	font-size: 10x;
+}
+
+.headerContainer{
+	width: 1000px;
+	margin: 0 auto;
+	
+}
+
+.buttonDiv{
+	float: right;
+	display: inline-block;
+}
+
+.sortDiv{
+	float: right;
+	display: inline-block;
+	margin-top: 23px;
+}
+
+.buttonItem:hover{
+	color: #2f7013;
+	cursor: pointer;
+}
+
+.clear{
+	clear: both;
+}
+
+.mainContainer{
+	margin: 10px auto;
+	width: 1000px;
+}
+
+.imageContainer{
+	margin: 10px auto;
+	width: 1000px;
+}
+
+.headlinesContainer{
+	/*margin: 10px auto;
+	width: 1000px;
+	height: 50px;
+	border: 1px solid black;*/
+	width: 1000px;
+	margin: 10px auto;
+	border: 1px solid lightgrey;
+	height: 40px;
+	
+}
+
+.headlines{
+	text-align: center; 
+	float: left;
+	width: 15%;
+	font-size: 30px;
+	background-color: lightgrey;
+	height: 40px;
+	
+	
+}
+
+.headlinesText{
+	 text-align: center;
+	 float: right;
+	 width: 75%;
+	 font-size: 30px;
+}
+
+.headerText{
+    font-family: Georgia;
+}
+
+.tableContainer{
+	margin: 10px auto;
+	width: 1000px;
+}
+
+.tableImage{
+	/*padding: 50px;*/
+}
+
+.lifeContainer{
+	margin: 10px auto;
+	width: 1000px;
+}
+
+.life{
+	float: left;
+}
+
+.viewAll{
+	float: right;
+}
+
+.leftSide{
+	width: 50%;
+	float: left;
+}
+
+.rightSide{
+	width: 50%;
+	float: right;
+
+}
+
+.leftTableContainer{
+	float: left;
+	width: 65%;
+}
+
+.rightTableContainer{
+	float: right;
+	width: 35%;
+}
+
+.loadButton{
+	background-color: none;
+	border: 1px solid black;
+	width: 650px;
+	text-align: center;
+	height: 40px;
+	font-size: 20px;
+}
+
+.loadButton:hover{
+  	color: #39E7AC;
+	background-color: white;
+	cursor: pointer;
+}
+
+th{
+	font-size: 30px;
+}
+
+.social{
+	
+	padding: 6px;
+}
+
+.advertisment{
+	border: 1px black solid;
+}
+
+.last{
+	padding: 30px;
+}
+
+.ending{
+	padding: 30px;
+	padding-right: 60px;
+	
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+	
+}
+
+a:hover{
+	text-decoration: none;
+	color: #39E7AC;
+	
+}
+
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+table a{
+	color: lightgrey;
+}
+
+table a:hover{
+	color: #39E7AC;
+	text-decoration: none;
+}
+

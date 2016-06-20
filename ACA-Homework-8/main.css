@@ -1,0 +1,62 @@
+.mainDiv{
+
+	background-image: url(background.jpg);
+	height: 500px;
+	width: 800px;
+	border-radius: 20px;
+}
+
+
+.numberText{
+	color: black;
+	font-size: 50px;
+	font-family: Arial Verdana;
+	margin-left: 50px;
+}
+
+.leftDiv{
+	float: left;
+	padding-left: 50px;
+}
+
+.chipImage{
+	padding-left: 50px;
+	margin-top: 8px;
+	height: 70px;
+	width: 90px;
+}
+
+.bankImage{
+	width: 125px;
+	height: 125px;
+}
+
+.rightDiv{
+
+	float: right;
+}
+
+.logoImage{
+
+	width: 150px;
+	height: 105px;
+	padding-right: 50px;
+	padding-top: 50px;
+	-webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+
+}
+
+.leftText{
+	font-family: ARial Verdana;
+	color: white;
+	font-size: 30px;
+}
+
+.leftText2{
+	font-family: Arial Verdana;
+	color: white;
+	font-size: 40px;
+}

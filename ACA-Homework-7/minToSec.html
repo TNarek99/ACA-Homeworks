@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)file:///I:/Narek/ACA/DAY5/2/index.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Min vs Sec</title>
+
+    <!-- Bootstrap -->
+    <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+	<link href="./index_files/main.css" rel="stylesheet">
+	<link href="./index_files/css" rel="stylesheet" type="text/css">
+    
+    <script>
+	  function calc()
+	  {
+	    
+		 var input1 = document.getElementById('minInput');
+         var input2 = document.getElementById('secInput'); 
+		
+		if (input1.value < 0 || input2.value < 0){window.alert('Really? Sorry but there are no negative time durations in our planet...'); return;}
+		if (input1.value == '' && input2.value == ''){window.alert('please enter numbers'); return;}
+		if (input1.value != '' && input2.value != ''){window.alert('please fill in only one of the inputs'); return;}
+		if (input1.value > 100){window.alert('max number for minutes is 100'); return;}
+	    if (input2.value > 6000){window.alert('max number for seconds is 6000'); return;}
+		if (input1.value != ''){convertToSec(); return;}
+		if (input2.value != ''){convertToMin(); return;}
+		
+		
+	  }
+	  
+	  function convertToMin(){
+	    var bar1 = document.getElementById('minBar');
+        var bar2 = document.getElementById('secBar');	
+        var input1 = document.getElementById('minInput');
+        var input2 = document.getElementById('secInput');  		
+		
+		var val1 = input1.value;
+		var val2 = input2.value;
+		
+		
+		input1.value = parseInt(val2)/60;
+		var koko = parseInt(input1.value);
+        bar1.style.width = koko + "%";
+	    var lolo = parseInt(input2.value)*100/6000;
+		bar2.style.width = lolo + "%";
+	  
+	  }
+	  
+	  function convertToSec(){
+	    var bar1 = document.getElementById('minBar');
+        var bar2 = document.getElementById('secBar');	
+        var input1 = document.getElementById('minInput');
+        var input2 = document.getElementById('secInput');  		
+		
+		var val1 = input1.value;
+		var val2 = input2.value;
+		
+		
+		input2.value = 60*parseInt(val1);
+		var koko = parseInt(input2.value)*100/6000;
+        bar2.style.width = koko + "%";
+		var lolo = parseInt(input1.value);
+		bar1.style.width = lolo + "%";
+	    
+	  
+	  }
+	</script>
+
+	
+  </head>
+  <body>
+    
+	<div class = "container">
+	  <div class = "row">
+	    <div class = "col-md-5">
+		  <h3>Minutes</h3>
+		  <div class="progress">
+			  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" id = "minBar">
+				
+			  </div>
+		  </div>
+		</div>
+		
+		<div class = "col-md-2">
+		</div>
+		
+		<div class = "col-md-5">
+		  <h3>Seconds</h3>
+		  <div class="progress">
+			  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="6000" id = "secBar">
+				
+			  </div>
+		  </div>
+		</div>
+	  </div>
+	  
+	  <div class = "row">
+	    <div class = "col-md-5">
+		  <input type = "text" placeholder = "Minutes" id = "minInput" class = "form-control">
+		</div>
+		
+		<div class = "col-md-2">
+		</div>
+		
+		<div class = "col-md-5">
+		  <input type = "text" placeholder = "Seconds" id = "secInput" class = "form-control">
+		</div>
+	  </div>
+	  <br><br><br>
+	  <div class = "row text-center">
+	    <div class = "col-md-12">
+		  <button onclick = "calc()" class = "btn btn-lg btn-primary">Calculate</button>
+		</div>
+	  </div>
+	</div>
+	
+	
+	
+		 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./index_files/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./index_files/bootstrap.min.js"></script>
+  
+
+
+
+
+
+
+</body></html>

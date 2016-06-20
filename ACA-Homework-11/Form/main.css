@@ -1,0 +1,12 @@
+.form-control{
+    width: 100% !important;
+    display: inline-block;
+    margin: 20px;
+}
+
+.btn{
+    width: 100%;
+    margin: 20px;
+    border-radius: 0% !important;
+
+}

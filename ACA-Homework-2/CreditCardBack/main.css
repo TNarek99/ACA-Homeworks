@@ -1,0 +1,54 @@
+.mainDiv{
+	background-image: url(background.jpg);
+	height: 500px;
+	width: 800px;
+	border-radius: 20px;
+}
+
+.blackLine{
+	height: 100px;
+	background-color: #23251F;
+}
+
+.whiteArea{
+	background-image: url(whitearea.png);
+	height: 70px;
+	width: 787px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.signatureImage{
+	float: left;
+}
+
+.signature{
+	width: 170px;
+	height: 100px;
+}
+
+.cardPassword{
+	
+	float: right;
+	
+}
+
+.numbers{
+	padding-right: 10px;
+	font-family: Times New Roman;
+	font-size: 50px;
+}
+
+.signatureArea{
+	margin-left: 30px;
+	font-size: 30px;
+	font-family: Times New Roman;
+	color:white;
+}
+
+.cautionText{
+	font-size: 30px;
+	font-family: Times New Roman;
+	color: white;
+	margin-left: 30px;
+}

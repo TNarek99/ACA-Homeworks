@@ -1,0 +1,175 @@
+@font-face{
+	font-family: "lobster";
+	src: Url('fonts/Lobster-Regular.ttf');
+}
+
+.more:hover{
+	color: black !important; 
+}
+
+::selection {
+  background: #fed136;; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #fed136;; /* Gecko Browsers */
+}
+
+body{
+	overflow-x: hidden;
+}
+
+.upperContainer{
+	background-image: Url('source/vitality.png');
+	height: 800px;
+	width: 100%;
+	background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.fix{
+	 /*background-image: Url('source/back.png');*/
+	 background-color: black;
+	 background-image: fixed;
+	 position: fixed; 
+	 top: 0; 
+	 bottom: 0; 
+	 right: 0; 
+	 left: 0;
+	 background-repeat: no-repeat;
+	 width: 1468px;
+	 height: 80px;
+	 margin-left: 17px;
+	 margin-right: 80px;
+	 z-index: 5;
+	 -moz-transition: all ease 0.7s;
+	-webkit-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+}
+
+.headerItem1{
+	font-size: 30px;    
+	padding: 20px;      
+	color: #ff9900;     
+	text-align: center;
+}
+
+.headerItem{
+	font-size: 15px; 
+	padding: 20px; 
+	color: white;
+	text-align: center;
+}
+
+.headerItem1:hover{
+	color: #ff9900;
+	cursor: pointer;
+}
+
+.headerItem:hover{
+	color: #ffad33;
+	cursor: pointer;
+}
+
+b, p, h1{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.portfolioImage:hover{
+	cursor: pointer;
+	
+}
+
+
+
+
+.timelineImage {
+  margin-left: 15px;
+  width: 200px;
+  height: 200px;
+  background-color: #fed136;
+  color: white;
+  border-radius: 100%;
+  border: 7px solid #f1f1f1;
+  text-align: center;
+}
+
+.image{
+	border-radius: 100%;
+	border: 7px solid #f1f1f1;
+}
+
+.lineContainer{
+	height: 150px;
+	width: 1%;
+	background-color: #f1f1f1;
+	
+}
+
+.loginContainer{
+	background-image: Url('source/map-image.png');
+	background-color: black;
+	height: 720px;
+	width: 100%;
+	background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+::-webkit-input-placeholder {
+   color: red;
+}
+
+
+:-ms-input-placeholder {  
+   color: red;  
+}
+
+.footerSpan{
+	color: #fed136;
+	font-size: 20px;
+	
+}
+
+.footerSpan1{
+	color: #fed136;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.footerSpan:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.footerSpan1:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+textarea, input{
+	-moz-transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+
+.change{
+	font-size: 37px;
+	-moz-transition: all ease 0.8s;
+	-webkit-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+}
+
+.btn, b{
+	-moz-transition: all ease 0.8s;
+	-webkit-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+	
+}
+
+.change:hover{
+	font-size: 47px;
+    
+}
+
+.fix:hover .change { color: yellow; }
+
+.upperContainer:hover .fix{ height: 120px; background-color: #323232;}
