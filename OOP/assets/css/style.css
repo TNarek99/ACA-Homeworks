@@ -1,0 +1,33 @@
+.navbar-list{
+    list-style-type: none;
+}
+
+.navbar-list-item{
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid black;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.navbar-list-item-selected{
+    background-color: black;
+    color: white;
+}
+
+.navbar-left{
+    float: left;
+    width: 45%;
+}
+
+.navbar-right{
+    float: right;
+    width: 45%;
+}
+
+.clear{
+    display: block;
+    clear: both;
+}

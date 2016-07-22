@@ -158,7 +158,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ACA-Homework-12" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../DAY19" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -210,12 +210,12 @@
       <workItem from="1466238333617" duration="1436000" />
       <workItem from="1466277630683" duration="3015000" />
       <workItem from="1466355309715" duration="9342000" />
-      <workItem from="1466408850482" duration="1391000" />
+      <workItem from="1466408850482" duration="1795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15184000" />
+    <option name="totallyTimeSpent" value="15588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
